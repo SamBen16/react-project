@@ -37,6 +37,19 @@ code {
   padding: 5px;
 
 }
+.nav-header li {
+  list-style: none;
+}
+
+.nav-header li a {
+  text-decoration: none;
+  color: #000; 
+}
+
+.nav-header li a.active {
+  text-decoration: underline;
+}
+
 .style-footer {
   margin: 10px;
   width: 1240px;
@@ -74,18 +87,72 @@ code {
 .style_section img {
   margin-top: 70px;
   font-family: Montserrat;
-font-size: 48px;
-font-weight: 700;
-line-height: 68.45px;
-text-align: left;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68.45px;
+  text-align: left;
 
 }
 .body {
-  margin: 10px;
+  margin: 5px;
   width: 1240px;
-height: 1095px;
-gap: 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
+  height: 1095px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
 
+.bodyGallery {
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  
+}
+
+.thumb-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.thumb {
+  width: 340px;
+  height: 340px;
+  margin: auto;
+  top: 5px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom, #f93f3f, #fd0000);
+  border-radius: 25px;
+  padding: 15px;
+  position: relative;
+}
+.thumb p {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  width: 40%;
+  left: 0;
+  margin: 10px;
+}
+.style-pageErreur {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.style-pageErreur img {
+  padding: 30px;
+}
+#page_404 {
+  width: 25%;
+  height: 25%;
+}
+#page_inexistante {
+  width: 30%;
+}
+#retour_page_accueil {
+  width: 50%;
 }

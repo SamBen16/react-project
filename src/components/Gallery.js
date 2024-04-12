@@ -1,8 +1,19 @@
 import React from 'react';
-import {travelList} from '../datas/travelList'
+import { dataList } from '../data/data'
 
 function Gallery() {
-    return <h1>ok</h1>
+    const firstSixItems = dataList.slice(0, 6);
+    return (
+        <div className="thumb-container">
+            
+                {firstSixItems.map(item => (
+                    <div className="thumb">
+                    <p>{item.title}</p>
+                    </div>
+                ))}
+          
+        </div>
+    );
 }
 
 export default Gallery
