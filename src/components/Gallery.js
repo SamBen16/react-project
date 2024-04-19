@@ -2,16 +2,13 @@ import React from 'react';
 import { dataList } from '../data/data'
 
 function Gallery() {
-    const firstSixItems = dataList.slice(0, 6);
     return (
         <div className="thumb-container">
-            
-                {firstSixItems.map(item => (
-                    <div className="thumb">
+            {dataList.map(item => (
+                <div className="thumb" style={{ background: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url(${item.cover})`, backgroundSize: 'cover' }}>
                     <p>{item.title}</p>
-                    </div>
-                ))}
-          
+                </div>
+            ))}
         </div>
     );
 }

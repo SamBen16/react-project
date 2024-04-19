@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import ValeurApropos from './ValeurApropos';
 import SectionUne from './SectionUne';
 import Gallery from './Gallery';
 import pageErreur from '../assets/404.png';
@@ -22,7 +23,6 @@ function App() {
   );
 }
 
-// Pour la page d'accueil
 function Home() {
   return (
     <div>
@@ -38,18 +38,14 @@ function Home() {
   );
 }
 
-// Pour la page À propos
 function About() {
   return (
     <div>
       <Header />
-        <div className="style-pageErreur">
-          <img src={ pageErreur } alt="page 404" id="page_404" />
-          <img src={ pageQuiNexistePas } alt="page qui n'existe pas" id="page_inexistante" />
-        <div>
-          <Link to="/"><img src={ retourPageDaccueil } alt="retour page d'accueil" id="retour_page_accueil"/></Link>
-        </div>
-        </div>
+      <div className='style_section'>
+        <h1></h1>
+		</div>
+      <ValeurApropos />
       <Footer />
     </div>
   );
